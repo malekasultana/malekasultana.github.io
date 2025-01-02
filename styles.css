@@ -1,0 +1,183 @@
+/* CUSTOM CSS */
+
+
+/* starts header */
+.header-bg {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    /* padding-top: 100px; */
+    /* padding-bottom: 50px; */
+    position: relative;
+}
+
+.navbar {
+    /* background-color: rgba(0, 0, 0, 0.8); */
+    background-color: #333;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.9);
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #ff6347;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar .nav-item.active .nav-link {
+    color: rgb(238, 14, 14);
+    /* Orange color for active link */
+    font-weight: bold1;
+    /* Bold font for active link */
+    text-decoration: underline1;
+    /* Underline the active link */
+    transition: all 0.3s ease;
+    /* Smooth transition effect */
+}
+
+
+.btn-light {
+    background-color: #fff;
+    color: #6a11cb;
+    font-weight: bold;
+}
+
+.btn-light:hover {
+    background-color: #ff6347;
+    color: #fff;
+}
+
+body {
+    padding-top: 56px;
+    /* Space for sticky navbar */
+}
+
+/* ends header */
+
+/* Ensure Text and Button Adjustments on Smaller Screens */
+@media (max-width: 767px) {
+    .header-bg h1 {
+        font-size: 2.5rem;
+        /* Smaller heading size on mobile */
+    }
+
+    .header-bg p {
+        font-size: 1.2rem;
+    }
+
+    .header-bg .btn {
+        font-size: 0.9rem;
+    }
+}
+
+
+.card {
+    border: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    border-radius: 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 12px 25px;
+    font-size: 16px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.modal-body img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+/* Text Styling */
+h5.card-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+    line-height: 1.6;
+}
+
+.modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Add Smooth Scroll Animations */
+.card {
+    animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.footer-bg {
+    background-color: #333;
+}
+
+.footer-bg h5 {
+    color: #f9a825;
+    font-weight: bold;
+}
+
+.footer-bg a {
+    text-decoration: none;
+}
+
+.footer-bg a:hover {
+    color: #f9a825;
+}
+
+/* Stack Footer Columns on Smaller Screens */
+@media (max-width: 767px) {
+    .footer-bg .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-bg .col-md-6 {
+        text-align: center;
+    }
+}
+
+footer ul li a:hover {
+    /* color: #3498db; Blue color when hovering */
+    text-decoration: underline;
+    /* Underline on hover */
+    /* background-color: rgba(52, 152, 219, 0.1); Light blue background on hover */
+}
