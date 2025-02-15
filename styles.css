@@ -75,12 +75,13 @@ body {
     }
 }
 
+/* Bootstrap card override */
 
 .card {
     border: none;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 .card:hover {
@@ -88,16 +89,9 @@ body {
 }
 
 .card-img-top {
-    height: 250px;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    padding: 12px 25px;
-    font-size: 16px;
+    height: 350px;
+    /* object-fit: cover; */
+    border-radius: 5px;
 }
 
 .btn-primary:hover {
@@ -105,11 +99,11 @@ body {
     border-color: #0056b3;
 }
 
-.modal-body img {
+/* .modal-body img {
     width: 100%;
     height: auto;
     border-radius: 15px;
-}
+} */
 
 /* Text Styling */
 h5.card-title {
@@ -180,4 +174,46 @@ footer ul li a:hover {
     text-decoration: underline;
     /* Underline on hover */
     /* background-color: rgba(52, 152, 219, 0.1); Light blue background on hover */
+}
+
+
+/* Slick Slider Overlay Customization */
+#workshop .slick-slider {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+#workshop .slide {
+    position: relative;
+    text-align: center;
+}
+
+#workshop .slide img {
+    width: 100%;
+    /* height: auto; */
+    /* max-height: 450px; */
+    height: 550px;
+    object-fit: cover;
+    /* object-position: top */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #workshop .slick-slider .slide img {
+        height: 350px;
+    }
+}
+
+#workshop .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    /* transform: translate(-50%, -50%); */
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    /* border-radius: 5px; */
 }
